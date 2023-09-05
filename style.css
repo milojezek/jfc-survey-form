@@ -103,3 +103,22 @@ a {
     border-radius: var(--rounded-corner);
 
 }
+
+
+@media screen and (max-width: 1100px) {
+    form {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    form {
+        width: 95%;
+    }
+}
