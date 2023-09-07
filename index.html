@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="form-container">
+        
+        <header>
+            <h1 id="title" class="header-text">~ junior.guru survey form ~</h1>
+            <p id="description" class="header-text">Your feedback will help us improve the club</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-section">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-field" placeholder="Enter your name" required>
+            </div>
+            <div class="form-section">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-field" placeholder="Enter your email" required>
+            </div>
+            <div class="form-section">
+                <label id="age-label" for="number">Age</label>
+                <input type="number" name="age" id="age" min="15" max="150" class="form-field" placeholder="Age">
+             </div>
+            <div class="form-section">
+                <p>Which option best describes your current role?</p>
+                <select id="role-dropdown" name="role" class="form-field">
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="learner">Full-time Learner</option>
+                    <option value="job-not-it">Employed (not IT)</option>
+                    <option value="job-it">Employed (IT)</option>
+                    <option value="prefer-no">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="form-section">
+                <p>Would you recommend junior.guru to a friend?</p>
+                <label>
+                    <input name="member-recommend" value="definitely" type="radio" class="input-radio" checked>
+                    Definitely
+                </label>
+                <label>
+                    <input name="member-recommend" value="maybe" type="radio" class="input-radio">
+                    Maybe
+                </label>
+                <label>
+                    <input name="member-recommend" value="no" type="radio" class="input-radio">
+                    No
+                </label>
+            </div>
+            <div class="form-section">
+                <p>How did you find out about the club?</p>
+                <select id="favourite-feature" name="favourite" class="form-field" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="web">Web junior.guru</option>
+                    <option value="socials">Social media (Facebook, Linkedin etc.)</option>
+                    <option value="search">Friend</option>
+                    <option value="work">Work</option>
+                </select>
+            </div>
+            <div class="form-section">
+                <p>
+                    What would you like to see improved?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+                <label>
+                    <input name="prefer" value="rituals" type="checkbox" class="prefer-checkbox">
+                    Rituals <span class="clue">(today I learned, week plans...)</span>
+                </label>
+                <label>
+                    <input name="prefer" value="study" type="checkbox" class="prefer-checkbox">
+                    Study support <span class="clue">(feedback to projects, mentoring, groups, diaries...)</span>
+                </label>
+                <label>
+                    <input name="prefer" value="tech" type="checkbox" class="prefer-checkbox">
+                    Tech channels <span class="clue">(tools, frontend, backend, java, mobile apps...)</span>
+                </label>
+                <label>
+                    <input name="prefer" value="job" type="checkbox" class="prefer-checkbox">
+                    Job search support <span class="clue">(career channel, feedback to cv/github/linkedin...)</span>
+                </label>
+                <label>
+                    <input name="prefer" value="fun" type="checkbox" class="prefer-checkbox">
+                    Events <span class="clue">(Monday Talking, online talks, meetings in person...)</span>
+                </label>
+                <label>
+                    <input name="prefer" value="handbook" type="checkbox" class="prefer-checkbox">
+                    Beginner handbook
+                </label>
+                <label>
+                    <input name="prefer" value="web" type="checkbox" class="prefer-checkbox">
+                    Web
+                </label>
+            </div>
+            <div class="form-section">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-section">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <img src="jg-chicken.png">
+</body>
+
+</html>

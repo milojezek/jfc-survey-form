@@ -1,0 +1,179 @@
+/* Google font: IBM Plex Mono 400 & 600 & 700 weight */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap');
+
+/* >>> Variables */
+:root {
+    --max-width: 1000px;
+
+    /* Font variables */
+    --font-family: "IBM Plex Mono", monospace;
+    --normal-font: 400;
+    --bold-font: 600;
+    --bolder-font: 700;
+
+    /* Colors */
+    --bg-color: #343434;
+    --primary-color: #FFFB8C;
+    --black-color: #323232;
+
+    /* Margins */
+    --small-margin: 0.5rem;
+    --normal-margin: 1rem;
+    --big-margin: 2rem;
+    --bigger-margin: 4rem;
+
+    /* Rounded corners */
+    --rounded-corner: 0.5rem;
+}
+
+/* Variables <<< */
+
+
+/* >>> CSS Resets & Global Settings */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    background-color: #343434;
+    font-family: var(--font-family);
+    color: var(--black-color);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--small-margin);
+    width: 50%;
+}
+
+div {
+    display: block;
+}
+
+.header-text {
+    text-align: center;
+    color: white;
+}
+
+p {
+    font-weight: var(--bold-font);
+    margin-bottom: var(--small-margin);
+}
+
+form {
+    display: block;
+    width: 50%;
+    padding: 2.5rem;
+    margin: auto;
+    margin-top: var(--normal-margin);
+    background-color: var(--primary-color);
+    border-radius: var(--rounded-corner);
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--small-margin);
+    font-weight: var(--bold-font);
+    font-size: 1rem;
+}
+
+input, button, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.input-radio, .prefer-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+/* CSS Resets & Initial Settings <<< */
+
+.form-container {
+    margin-top: var(--normal-margin);
+}
+
+.form-section {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+.form-field {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    color: grey;
+    padding-left: 0.5rem;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: var(--rounded-corner);
+
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 1rem;
+    border-radius: var(--rounded-corner);
+    resize: vertical;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: var(--black-color);
+    color: white;
+    font-size: 2rem;
+    font-weight: var(--bolder-font);
+    border-radius: var(--rounded-corner);
+    cursor: pointer;
+}
+
+.clue {
+    color: grey;
+}
+
+@media screen and (max-width: 1100px) {
+    form {
+        width: 65%;
+    }
+
+    img {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    form {
+        width: 80%;
+    }
+
+    img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    form {
+        width: 95%;
+    }
+
+    img {
+        width: 95%;
+    }
+}
